@@ -1,44 +1,45 @@
-<html>
-  <head>
-    <title>Top Caffe</title>
-    <style>
-      ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow:hidden;
-          border: 1px solid #e7e7e7;
-          background-color: #f3f3f3;
-      }
+---
+title: Top Caffe
+menu: acasa
+---
+{% include_relative _sus.html %}
+{% include_relative _meniu.html %}
 
-      li {
-          float: left;
-      }
 
-      li a {
-          display: block;
-          color: #666;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-      }
 
-      li a:hover:not(.active) {
-          background-color: #ddd;
-      }
+{% include_relative acasa_carousel.html %}
+   
 
-      li a.active {
-          color: white;
-          background-color: #4CAF50;
-      }
-    </style>
-  </head>
-  <body>
-     <img src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/11038376_466350583512972_6700013862042576997_n.png?oh=7e7ac8ec1c07a6bd4670be5aafedf528&oe=59152358" alt="logo" width="300px">
-    <ul>
-      <li><a class="active" href="produse.html">Produse</a></li>
-      <li><a href="despre-noi.html">Despre Noi</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </body>
-</html>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="imagini/personalizate.jpg" alt="Torturi Personalizate" width="140" height="140">
+          <h2>Torturi Personalizate</h2>
+          <p></p>
+          <p><a class="btn btn-default" href="torturi_personalizate.html" role="button">Vezi galerie &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="imagini/nunta.jpg" alt="Torturi de Nuntă" width="140" height="140">
+          <h2>Torturi de Nuntă</h2>
+          <p></p>
+          <p><a class="btn btn-default" href="torturi_nunta.html" role="button">Vezi galerie &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="imagini/botez.jpg" alt="Torturi de Botez" width="140" height="140">
+          <h2>Torturi de Botez</h2>
+          <p></p>
+          <p><a class="btn btn-default" href="torturi_botez.html" role="button">Vezi galerie &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      {% include_relative _jos_firma.html %}
+
+    </div><!-- /.container -->
+{% include_relative _jos.html %}

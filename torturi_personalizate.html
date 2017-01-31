@@ -1,0 +1,42 @@
+---
+title: Top Caffe - Torturi Personalizate
+menu: torturi
+galerie:
+-  poza: 1
+-  poza: 2
+-  poza: 3
+-  poza: 4
+-  poza: 5
+-  poza: 6
+-  poza: 7
+-  poza: 8
+-  poza: 9
+-  poza: 10
+-  poza: 11
+-  poza: 12
+---
+{% include_relative _sus.html %}
+{% include_relative _meniu.html %}
+
+<style type="text/css">
+    body { padding-top: 100px; }
+</style>
+
+
+
+  <div class="container marketing">
+
+    <div class="row">
+      {% for element in page.galerie %}
+      <div class="col-lg-3 galerie">
+        <a href="#" class="pop"><img class="img-rounded" src="imagini/personalizate/pers_mica_{{element.poza}}.jpg" alt="Torturi Personalizate"></a>
+      </div><!-- /.col-lg-4 -->
+      {% endfor %}
+
+    </div><!-- /.row -->
+
+    {% include_relative _jos_firma.html %}
+
+  </div><!-- /.container -->
+
+{% include_relative _jos.html %}
